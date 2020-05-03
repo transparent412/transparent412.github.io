@@ -1,0 +1,648 @@
+html,
+body {
+height: 100%;
+width: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal 
+	font-weight: normal;
+	color : #313131;
+}
+
+button {
+cursor: pointer;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+ul,
+li {
+list-style: none;
+}
+
+:focus {
+outline: 0;
+}
+
+/* Text */
+h1,
+h2,
+h3,
+h4 {
+font-weight: bold;
+font-style: normal;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+color: #313131;
+text-decoration: none;
+}
+
+a:hover {
+color: #313131;
+}
+
+/* blocks */
+
+.cleaner{ clear: both }
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.left {float: left;}
+.right {float: right;}
+.block {display: block;}
+.none {display: none;}
+
+.bold {font-weight: bold;}
+
+header, main, footer {
+width: 1920px;
+margin: 0 auto;
+}
+
+/******************************/
+/*           header           */
+/******************************/
+
+/* head */
+
+.head {
+	width: 100%;
+	height: 50px;
+}
+
+.container {
+	display: flex;
+	height: 100%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../img/back.png);
+	background-size: cover;
+}
+
+.head .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	width: 70%;
+}
+
+.topnav {
+	font-size: 24px;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	width: 100%;
+}
+
+.head__contacts {
+}
+
+.logo,
+nav,
+.head__contacts {
+	display: flex;
+	justify-content: space-between;
+}
+ 
+
+.info {
+	display: flex;
+	height: 100%;
+}
+
+
+.info-title {
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.info_inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 80%;
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+/*******main********************************************************************/
+
+main {
+	width: 100%;
+}
+
+.features .container {
+	display: flex;
+	flex-direction: column;
+}
+
+img {
+	width: 60px;
+	height: 70px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.line {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: space-around;
+}
+
+.case {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	font-size: 18px;
+	flex-wrap: wrap;
+}
+
+.cause {
+	margin-top: 30px;
+ 	width: 320px;
+ 	height: 270px;
+ }
+
+.suptitle{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+width: 100%;
+font-size: 20px;
+text-decoration: none;
+}
+
+.suptitle:after {
+content: "";
+width: 200px;
+height: 3px;
+background: #000;
+position: absolute;
+margin-top: 25px;
+}
+
+.icon {
+	display: none;
+}
+
+/*********************************************************************************pricelist*/
+
+.pricelist {
+	width: 100%;
+	background-color:  #fcac45;
+}
+
+
+.pricelist  .container {
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	width: 60%;
+	text-align: left;
+	font-size: 20px;
+}
+
+.prc {
+	width: 100%;
+	line-height: 300%;
+	align-items: center;
+}
+
+tbody {
+	margin: auto;
+	width: 90%;
+}
+
+tr {
+	display: flex;
+	justify-content: space-between;
+}
+
+.suBtitle {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;
+}
+
+/*******reviews_slider************************************************************************/
+
+.reviews {
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+}
+
+.reviews .container {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.container_slider {
+	padding: 60px 0 0 0;
+	min-width: 0;
+}
+
+.slider_item {
+	display: flex;
+	text-align: center;
+}
+
+.title_rev {
+	color: white;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	flex-direction: column;
+	font-size: 20px;
+	text-decoration: none;
+	margin-bottom: 50px;
+}
+
+.title {
+	margin: auto 0 20px 0;
+	padding: 6px;
+}
+
+.name {
+	color: white;
+}
+
+.reviews_text {
+	color: white;
+}
+
+.conteiner_for_reviews {
+	margin-top: 10px;
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+/*************Обратная связь**********************************************************************************/
+
+.contact_form {
+	height: 640px;
+}
+
+.contact_form .container {
+	display: flex;
+	align-items: center;
+}
+
+.contact_wrapper {
+	width: 753px;
+	margin: 0 auto;
+	font-size: 20px;
+	color: #636363;
+}
+
+.form_inputs {
+	display: flex;
+}
+
+input:first-of-type {
+	margin-right: 23px;	
+}
+
+input {
+	width: 360px;
+	height: 40px;
+	margin-bottom: 30px;
+}
+
+textarea {
+	width: 100%;
+	height: 163px;
+}
+
+input, textarea {
+	border: 1px solid #9999;
+}
+
+.button_block {
+	display: flex;
+	justify-content: flex-end;
+}
+
+input[type=submit] {
+	width:200px;
+	height: 50px;
+	background: #fcac45;
+	color: white;
+	margin-right: 0;
+	margin-top: 30px;
+}
+
+/*************************footer********************************************************************/
+
+.social {
+	height: 100%;
+	width: 100%;
+} 
+
+footer {
+	background-color: black;
+	height: 70px;
+	width: 100%;
+}
+
+
+/***************адаптив*****************/
+
+@media screen and (max-width: 1290px) {
+	nav {
+		width: 60%;
+	}
+
+	.table {
+		margin-top: 10px;
+		width: 80%;
+	}
+
+	.conteiner_for_reviews {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.head .container {
+		height: 50px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.topnav a {
+		display: none;
+	}
+
+	.head__contacts {
+		position: relative;
+		top: 10px;
+	}
+
+	nav {
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+
+	.topnav a.icon {
+		display: block;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.table {
+		width: 80%;
+	}
+
+	form{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.table {
+		width: 80%;
+	}
+
+	.form_inputs {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.email_user span{
+		margin-right: 40px;
+	}
+
+	.email_user {
+		width: 100%;
+	}
+
+	.name_user {
+		width: 100%;
+	}
+
+	.contact_wrapper {
+		display: flex;
+		justify-content: center;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	.problem {
+		float: left;
+	}
+
+	input:first-of-type{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.button_block {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.table {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.container {
+		width: 90%;
+	}
+
+	.title_rev p {
+		font-size: 15px;
+	}
+
+	.reviews_text {
+		font-size: 15px;
+	}
+
+	.info-title {
+		font-size: 25px;
+		font-weight: 800;
+	}
+
+	.table {
+		font-size: 16px;
+	}
+
+	.prc {
+	width: 100%;
+	line-height: 250%;
+	align-items: center;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.prc {
+		line-height: 200%;
+		font-size: 13px;
+	}
+
+	h1 {
+		font-size: 27px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	.info-title {
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+	.head__contacts {
+		font-size: 15px;
+	}
+
+	h1 {
+		font-size: 27px;
+	}
+
+	.prc {
+		line-height: 300%;
+		font-size: 13px;
+	}
+
+	.suptitle h2{
+		font-size: 20px;
+	}
+	
+	.case {
+		font-size: 15px;
+	}
+
+	.suBtitle h2{
+		font-size: 20px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.title_rev p {
+		font-size: 14px; 
+	}
+
+	.title {
+		margin: auto 0 10px 0;
+	}
+
+	.name {
+		font-size: 18px;
+	}
+
+	.reviews_text {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h2 {
+		font-size: 25px;
+	}
+
+	.info-title {
+		font-size: 20px;
+		font-weight: 800;
+	}
+
+	.head__contacts {
+		font-size: 15px;
+	}
+
+	h1 {
+		font-size: 27px;
+	}
+
+	.prc {
+		line-height: 300%;
+		font-size: 13px;
+	}
+
+	.suptitle h2{
+		font-size: 20px;
+	}
+	
+	.case {
+		font-size: 15px;
+	}
+
+	.suBtitle h2{
+		font-size: 20px;
+	}
+
+	.title {
+		font-size: 20px;
+	}
+
+	.title_rev p {
+		font-size: 14px; 
+	}
+
+	.title {
+		margin: auto 0 10px 0;
+	}
+
+	.name {
+		font-size: 18px;
+	}
+
+	.reviews_text {
+		font-size: 13px;
+	}
+}
