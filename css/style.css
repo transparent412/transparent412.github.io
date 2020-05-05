@@ -201,7 +201,7 @@ font-size: 20px;
 text-decoration: none;
 }
 
-.suptitle:after {
+.suptitle::after {
 content: "";
 width: 200px;
 height: 3px;
