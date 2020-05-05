@@ -106,11 +106,11 @@
 		</section>
 		<!---------------- pricelist -------------------->
 		<section class="pricelist" id="price">
-			<div class="container" data-aos="zoom-in">
+			<div class="container">
 				<div class="suptitle">
 					<h2>Стоимость услуг</h2>
 				</div>
-				<div class="table">
+				<div class="table" data-aos="zoom-in">
 					<table class="prc">
 						<tbody>
 						<tr>
@@ -203,21 +203,16 @@
 		<!--------------- Форма обратной связи ------------------>
 		<section class="contact_form" id="contact_us">
 			<div class="container">
-				<div class="contact_wrapper">
-					<form action="" name="newform" method="post">
-						<div class="form_inputs" >
-							<p class="email_user" data-aos="fade-right"><span>E-mail</span> <input type="text"></p>
-							<p class="name_user" data-aos="fade-left">Ваше имя <input type="text"></p>
-						</div>
-						<div class="problems_container" data-aos="flip-left">
-						<p class="problem">Опишите вашу проблему</p>
-						<textarea name="text"></textarea>
-						<div class="button_block">
-							<input type="submit" value="Отправить">
-						</div>
-						</div>
-					</form>
-				</div>
+				<form action="" name="newform" method="post">
+					<div class="form_inputs" data-aos="fade-down">
+						<p>Ваше имя<input type="text" class="name_user"></p>
+						<p>E-mail <input type="text"></p>
+					</div>
+					<p data-aos="flip-up">Опишите Вашу проблему <textarea name="text" id="" cols="30" rows="10"></textarea></p>
+					<div class="button_block">
+						<input type="submit" value="Отправить">
+					</div>
+				</form>
 			</div>
 		</section>
 	</main>

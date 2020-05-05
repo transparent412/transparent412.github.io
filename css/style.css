@@ -222,7 +222,7 @@ margin-top: 25px;
 }
 
 
-.pricelist  .container {
+.pricelist .container {
 	justify-content: space-between;
 	flex-direction: column;
 	align-items: center;
@@ -321,35 +321,35 @@ tr {
 
 
 /*************Обратная связь**********************************************************************************/
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
 
 .contact_form {
-	height: 640px;
+	height: 600px;
 }
 
 .contact_form .container {
-	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
-.contact_wrapper {
-	width: 753px;
-	margin: 0 auto;
+input {
+	width: 320px;
+	height: 40px;
 	font-size: 20px;
-	color: #636363;
+	margin-bottom: 30px;
 }
 
 .form_inputs {
 	display: flex;
 }
 
-input:first-of-type {
-	margin-right: 23px;	
-}
-
-input {
-	width: 360px;
-	height: 40px;
-	margin-bottom: 30px;
+.form_inputs p {
+	display: flex;
+	flex-direction: column;
 }
 
 textarea {
@@ -357,8 +357,12 @@ textarea {
 	height: 163px;
 }
 
+.name_user {
+	margin-right: 25px;
+}
+
 input, textarea {
-	border: 1px solid #9999;
+	border: 1px solid #999999;
 }
 
 .button_block {
@@ -367,14 +371,13 @@ input, textarea {
 }
 
 input[type=submit] {
-	width:200px;
-	height: 50px;
-	background: #fcac45;
+	width: 165px;
+	height: 40px;
+	background-color: #fcac45;
 	color: white;
 	margin-right: 0;
-	margin-top: 30px;
+	margin-top: 20px;
 }
-
 /*************************footer********************************************************************/
 
 .social {
@@ -439,7 +442,7 @@ footer {
 		width: 80%;
 	}
 
-	form{
+	.form_inputs {
 		width: 100%;
 	}
 }
@@ -448,46 +451,16 @@ footer {
 	.table {
 		width: 80%;
 	}
+}
 
+@media screen and (max-width: 868px) {
 	.form_inputs {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 	}
 
-	.email_user span{
-		margin-right: 40px;
-	}
-
-	.email_user {
+	input {
 		width: 100%;
-	}
-
-	.name_user {
-		width: 100%;
-	}
-
-	.contact_wrapper {
-		display: flex;
-		justify-content: center;
-	}
-
-	form {
-		width: 100%;
-	}
-
-	.problem {
-		float: left;
-	}
-
-	input:first-of-type{
-		width: 100%;
-		margin-right: 0;
-	}
-
-	.button_block {
-		display: flex;
-		justify-content: center;
 	}
 }
 
@@ -496,6 +469,12 @@ footer {
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 700px) {
+	form {
+		width: 70%;
+	}
+} 
 
 @media screen and (max-width: 430px) {
 	.container {
@@ -523,6 +502,10 @@ footer {
 	width: 100%;
 	line-height: 250%;
 	align-items: center;
+	}
+
+	form {
+		width: 414px;
 	}
 }
 
