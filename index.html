@@ -4,15 +4,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-	<meta name="keywords" content=/>
-	<meta name="description" content= />
+	<meta name="keywords" content=""/>
+	<meta name="description" content="" />
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
 	<title></title>
@@ -21,11 +23,22 @@
 </head>
 <body>
 <!-- header -->
+	<figure>
+		<button class="fas fa-arrow-alt-circle-up button_Up" id="buttonUp"></button>
+	</figure>
 		<header>
+			<div id="video-bg">
+			    <video src="video/untitled00001250.mp4" width="100%" height="auto" preload="auto" autoplay="autoplay"
+			    loop="loop" muted="muted">
+			        <source src="video/untitled00001250.mp4" type="video/mp4"></source>
+			         <source src="video/untitled00001250.webm" type="video/webm"></source>
+			    </video>
+			</div>
+			<div class="bg"></div>
 			<div class="head">
 				<div class="container">
 					<div class="logo">
-						<h1>Ремонт</h1>
+						Ремонт
 					</div>
 					<nav>
 						<ul class="topnav" id="topnav">
@@ -38,9 +51,6 @@
 							<li>
 								<a href="#contact_us" class="nav">Обратная связь</a>
 							</li>
-							<li>
-								<a href="" id="menu" class="icon">&#9776;</a>
-							</li>
 						</ul>
 					</nav>
 					<div class="head__contacts">
@@ -48,54 +58,81 @@
 						&#9742;		
 						+7 (908) 544-39-20					
 						</a>
+					<div class="address">
+						<a href="http://maps.yandex.ru/?text=Россия, Москва, улица Льва Толстого&sll=37.585916,55.734516&sspn=0.032932,0.018581&ol=geo&oll=37.585916,55.734516&ll=37.585916,55.734855&spn=0.067205,0.021163&z=15&l=map">
+							Какой-то адресс					
+						</a>
+					</div>
 					</div>
 				</div>
 			</div>
 			<div class="info">
-				<div class="container">
-					<div class="info_inner">
-						<p class="info-title">Ремонт бытовой техники в Саратове. Диагностика бесплатно.</p>
+				<div class="header_text">
+					<div class="animate_line"></div>
+					<div class="text">
+						Ремонт бытовой техники в Саратове. Диагностика бесплатно.
+						<div class="animate_line_out"></div>
 					</div>
 				</div>
+				<div class="button js-button-campaign"><span><p>Узнать подробности</p></span></div>
+				<div class="overlay js-overlay-campaign">
+					<div class="popup js-popup-campaign">
+					<div class="contact_form">
+						<form action="" name="newform" method="post">
+							<div class="form_inputs" data-aos="zoom-in-down">
+								<p><input type="text" class="name_user" placeholder="Ваше имя"></p>
+								<p><input type="text" placeholder="Ваше E-mail"></p>
+								<p class="number"><input type="tel" placeholder="Ваш номер телефона"></p>
+							</div>
+							<p class="prob"  data-aos="flip-left"><textarea name="text" id="" cols="30" rows="10" placeholder="Опишите Вашу проблему"></textarea></p>
+							<div class="button_block" >
+								<input type="submit" value="Отправить">
+							</div>
+						</form>
+					</div>
+						<div class="close-popup js-close-campaign"></div>
+					</div>
+				</div>
+			</div>
 			</div>
 		</header>
 	<main>
 		<!--features!-->
-		<section class="features" data-aos="fade-right" id="about_us">
+		<section class="features" id="about_us">
 			<div class="container">
-				<div class="suptitle">
+				<div class="suptitle suptitle_line">
 					<h2>Почему именно мы</h2>
 				</div>
 				<div class="line">
 					<div class="case">
-						<div class="cause">
+						<div class="cause"  data-aos="fade-down" data-aos-offset="10">
 							<img src="img/cause_1.png" alt="">
-							<h3>Высокотехнологичное оборудование</h3>
+							<div class="cause__title">
+							    <h3>Новейшее оборудование</h3>
+							</div>
 							<p>Использование современного оборудования высокой точности.</p>
 						</div>
-						<div class="cause">
+						<div class="cause" data-aos="fade-down" data-aos-offset="100">
 							<img src="img/cause_2.png" alt="">
 							<h3>Современные технологии</h3>
 							<p>Использование новейших технологических решений.</p>
 						</div>
-						<div class="cause">
+						<div class="cause" data-aos="fade-down" data-aos-offset="190">
 							<img src="img/cause_3.png" alt="">
 							<h3>Гарантия</h3>
 							<p>Мы даём гарантию на любые работы на срок от 4 до 8 месяцев.</p>
 						</div>
-					</div>
-					<div class="case">
-						<div class="cause">
+						<div class="cause" data-aos="fade-down" data-aos-offset="20">
 							<img src="img/cause_4.png" alt="">
-							<h3>Адекватная ценовая политика</h3>
+							<h3>Адекватная ценовая политка</h3>
 							<p>Стоимость нашей работы доступна для всех.</p>
 						</div>
-						<div class="cause">
+						<div class="cause" data-aos="fade-down" data-aos-offset="110">
 							<img src="img/cause_5.png" alt="">
 							<h3>Качественные запчасти</h3>
 							<p>Сотруднечество с поставщиками фирм производителей</p>
 						</div>
-						<div class="cause">
+						<div class="cause" data-aos="fade-down" data-aos-offset="190">
 							<img src="img/cause_6.png" alt="">
 							<h3>Пунктуальность</h3>
 							<p>Выполнение работ точно в утвержденные сроки.</p>
@@ -107,10 +144,10 @@
 		<!---------------- pricelist -------------------->
 		<section class="pricelist" id="price">
 			<div class="container">
-				<div class="suptitle">
+				<div class="suptitle suptitle_line">
 					<h2>Стоимость услуг</h2>
 				</div>
-				<div class="table" data-aos="zoom-in">
+				<div class="table"  data-aos="fade-down">
 					<table class="prc">
 						<tbody>
 						<tr>
@@ -161,7 +198,7 @@
 					</table>
 				</div>
 				<div class="suBtitle">
-					<h2>Если у вас есть вопросы, звоните</h2>
+					<h3>Если у вас есть вопросы, звоните</h3>
 					<a href="tel: +79085443924">
 						&#9742;
 						+7 (908) 544-39-20		
@@ -172,7 +209,7 @@
 		<!------ reviews_slider ------->
 		<section class="reviews">
 			<div class="container">
-				<div class="title_rev">
+			    <div class="suptitle white">
 					<h2 class="title">Вы можете нам доверять</h2>
 					<p>Мы оказываем услуги по ремонту бытовой техники более 10 лет. Для вас-опыт, честность, профессионализ</p>
 				</div>
@@ -200,19 +237,45 @@
 				</div>
 			</div>
 		</section>
-		<!--------------- Форма обратной связи ------------------>
-		<section class="contact_form" id="contact_us">
+		<section class="cotnact">
 			<div class="container">
-				<form action="" name="newform" method="post">
-					<div class="form_inputs" data-aos="fade-down">
-						<p>Ваше имя<input type="text" class="name_user"></p>
-						<p>E-mail <input type="text"></p>
+				<div class="contact_form">
+					<form action="" name="newform" method="post">
+						<div class="form_inputs" data-aos="zoom-in-down">
+							<p><input type="text" class="name_user" placeholder="Ваше имя"></p>
+							<p><input type="text" placeholder="Ваше E-mail"></p>
+							<p class="number"><input type="tel" placeholder="Ваш номер телефона"></p>
+						</div>
+						<p class="prob"  data-aos="flip-left"><textarea name="text" id="" cols="30" rows="10" placeholder="Опишите Вашу проблему"></textarea></p>
+						<div class="button_block" >
+							<input type="submit" value="Отправить">
+						</div>
+					</form>
+				</div>
+				<div class="wrapper">
+					<div class="block_info">
+						<div class="information">
+							Как добраться
+						</div>
+						<ul class="text-block">
+							<li>
+								<span>Адрес:</span>
+								<br>
+								Какой-то там адрес
+							</li>
+							<li>
+								<span>Телефон:</span>
+								<br>
+								Какой-то там номер
+							</li>
+							<li>
+								<span>E-mail:</span>
+								<br>
+								Какое-то там мыло
+							</li>
+						</ul>
 					</div>
-					<p data-aos="flip-up">Опишите Вашу проблему <textarea name="text" id="" cols="30" rows="10"></textarea></p>
-					<div class="button_block">
-						<input type="submit" value="Отправить">
-					</div>
-				</form>
+				</div>
 			</div>
 		</section>
 	</main>
